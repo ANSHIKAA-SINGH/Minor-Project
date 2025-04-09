@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circuit Simulator</title>
+    <link rel="stylesheet" href="circuit.css" />
+  </head>
+  <body>
+    <h1>Circuit Simulator</h1>
+
+    <!-- Component List -->
+    <div id="components">
+      <div class="component" draggable="true" data-type="Resistor">
+        Resistor
+      </div>
+      <div class="component" draggable="true" data-type="Capacitor">
+        Capacitor
+      </div>
+      <div class="component" draggable="true" data-type="Inductor">
+        Inductor
+      </div>
+      <div class="component" draggable="true" data-type="Voltage Source">
+        Voltage Source
+      </div>
+      <div class="component" draggable="true" data-type="Current Source">
+        Current Source
+      </div>
+      <div class="component" draggable="true" data-type="Potentiometer">
+        Potentiometer
+      </div>
+      <div class="component" draggable="true" data-type="LED">LED</div>
+      <div class="component" draggable="true" data-type="Power">Power</div>
+      <div class="component" draggable="true" data-type="Transistor">
+        Transistor
+      </div>
+      <div class="component" draggable="true" data-type="Diode">Diode</div>
+      <div class="component" draggable="true" data-type="Switch">Switch</div>
+      <div class="component" draggable="true" data-type="Battery">Battery</div>
+    </div>
+
+    <button id="start-simulation">Start Simulation</button>
+    <button id="stop-simulation">Stop Simulation</button>
+
+    <!-- Simulation Canvas -->
+    <div id="canvas"></div>
+
+    <script src="circuit.js"></script>
+  </body>
+</html>
